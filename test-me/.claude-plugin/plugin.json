@@ -1,0 +1,15 @@
+{
+  "name": "test-me",
+  "version": "1.0.0",
+  "description": "Decide whether a tool, or a feature borrowed from one, really does the job, from evidence of using it rather than its README.",
+  "author": {
+    "name": "Ali Osman Ozen"
+  },
+  "license": "MIT",
+  "keywords": [
+    "evaluation",
+    "tool-selection",
+    "security",
+    "evidence"
+  ]
+}

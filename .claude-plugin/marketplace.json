@@ -1,0 +1,17 @@
+{
+  "name": "aequai-skills",
+  "owner": { "name": "Ali Osman Ozen" },
+  "metadata": {
+    "description": "Agent skills from AequAI for everyday work with AI."
+  },
+  "plugins": [
+    {
+      "name": "test-me",
+      "source": "./test-me",
+      "description": "Decide whether a tool, or a feature borrowed from one, really does the job, from evidence of using it rather than its README.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["evaluation", "tool-selection", "security", "evidence"]
+    }
+  ]
+}
