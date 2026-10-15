@@ -1,61 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-content-page>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AequAI Skills</title>
 <meta name="description" content="Agent skills from AequAI. test-me: decide whether a tool really does the job, from evidence of using it, not from its README.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.aequai.com/assets/img/aequai-mark.svg" type="image/svg+xml">
+<!-- Shared AequAI header and footer: aequai/subprojects/webpage/studio/geometry-lab/pages/build-shell.mjs -->
+<link rel="stylesheet" href="https://www.aequai.com/assets/shell/v1/shell.css">
+<script src="https://www.aequai.com/assets/shell/v1/shell.js" defer></script>
 <style>
-:root{--bg:#0d0f10;--fg:#eceae4;--muted:#9a9a94;--line:#2a2d2f;--card:#151819;--accent:#c8f169}
-@media (prefers-color-scheme:light){:root{--bg:#f6f5f1;--fg:#141515;--muted:#5d5e5a;--line:#d9d7d0;--card:#fff;--accent:#3d6b00}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Archivo,system-ui,sans-serif}
-main{max-width:760px;margin:0 auto;padding:56px 16px 72px}
-.mono,code,pre{font-family:"IBM Plex Mono",ui-monospace,monospace}
-.kicker{color:var(--muted);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-h1{font-size:clamp(32px,7vw,52px);line-height:1.05;margin:8px 0 16px}
-h2{font-size:20px;margin:40px 0 8px}
-p,li{max-width:68ch}
-a{color:var(--fg)}
-pre{background:var(--card);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:14px;border-radius:6px}
-.lead{font-size:19px}
-.verdicts{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
-.verdicts li{border:1px solid var(--line);background:var(--card);padding:6px 10px;border-radius:4px;font-size:14px}
-footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.sk-pre{margin:16px 0 0;padding:16px;overflow-x:auto;border:1px solid var(--gk-line);font:13.5px/1.6 var(--lv-mono);color:var(--gk-tx);white-space:pre}
 </style>
 </head>
 <body>
-<main>
-<div class="kicker mono">AequAI Skills</div>
-<h1>test-me</h1>
-<p class="lead">Decide whether a tool really does the job, from evidence of using it, not from its README.</p>
-<p>Before you adopt a new app, library or agent tool, or copy a feature from one, test-me has your AI agent test it the way a careful reviewer would.</p>
-<ul>
-<li>Each promise becomes a single, testable claim.</li>
-<li>The test is fixed before the tool runs.</li>
-<li>The tool is used on synthetic data.</li>
-<li>Every claim gets a plain verdict:</li>
-</ul>
-<ul class="verdicts mono">
-<li>Keep current method</li><li>Limited pilot</li><li>Adopt</li><li>Drop for now</li>
-</ul>
-<p>"Keep what you have" is often the right answer, and the skill says so.</p>
-
-<h2>Install</h2>
-<p>In Claude Code:</p>
-<pre>/plugin marketplace add 0xOzen/test.me
+<main class="cp-main" id="main" tabindex="-1" data-page-type="document">
+<section class="cp-hero"><span class="cp-label">Skills</span><h1>test-me</h1><p class="cp-lede">Decide whether a tool really does the job, from evidence of using it, not from its README.</p></section>
+<div class="cl-page cl-document">
+<section class="cl-section" id="what"><header class="cl-head"><span class="cl-label">01 · What it does</span><h2>Test the tool before you build on it.</h2><p>For a new app, library or agent tool, or a feature you plan to copy from one.</p></header><div class="cl-body">
+<p>test-me has your AI agent test the tool the way a careful reviewer would. Each promise becomes a single, testable claim. The test is fixed before the tool runs, and the tool is used on synthetic data.</p>
+<p>Every claim gets a plain verdict: keep the current method, run a limited pilot, adopt it, or drop it for now. "Keep what you have" is often the right answer, and the skill says so.</p>
+</div></section>
+<section class="cl-section" id="install"><header class="cl-head"><span class="cl-label">02 · Install</span><h2>Two commands in Claude Code.</h2><p>Any agent that reads <code>SKILL.md</code> folders can use the skill folder directly.</p></header><div class="cl-body">
+<pre class="sk-pre">/plugin marketplace add 0xOzen/test.me
 /plugin install test-me@aequai-skills</pre>
-<p>Any agent that reads <code>SKILL.md</code> folders can use <code>test-me/skills/test-me/</code> from the <a href="https://github.com/0xOzen/test.me">repository</a> directly.</p>
-
-<h2>What you get</h2>
-<p>A one-page report with the decision first, the evidence for each claim, and what was not checked.</p>
-
-<h2>Who it is for</h2>
-<p>Anyone choosing tools with an AI agent: founders, operators, developers, and teams that handle sensitive data.</p>
-
-<footer>MIT licence · <a href="https://github.com/0xOzen/test.me">github.com/0xOzen/test.me</a> · <a href="https://aequai.com">aequai.com</a></footer>
+<ul class="cl-links"><li><a href="https://github.com/0xOzen/test.me">Source on GitHub →</a></li></ul>
+</div></section>
+<section class="cl-section" id="get"><header class="cl-head"><span class="cl-label">03 · What you get</span><h2>One page, decision first.</h2><p>For founders, operators, developers, and teams that handle sensitive data.</p></header><div class="cl-body">
+<p>A one-page report with the decision first, the evidence for each claim, and what was not checked. MIT licence.</p>
+</div></section>
+</div>
 </main>
 </body>
 </html>
